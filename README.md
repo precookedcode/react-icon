@@ -26,7 +26,7 @@ npm install @precooked/react-icon
 ```ts
 interface IconPath {
     d: string;
-    color?: keyof typeof colors \| string;
+    color?: keyof typeof colors | string;
 }
 ```
 
