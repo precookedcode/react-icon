@@ -12,11 +12,11 @@ interface IconProps {
     name?: string; // Hacer opcional para no requerirlo si paths está presente
     paths?: IconPath[]; // Nueva prop paths
     size?: number;
-    styles?: React.CSSProperties;
+    style?: React.CSSProperties;
     color?: string; // Prop color opcional
 }
 
-const Icon: React.FC<IconProps> = ({ name, paths, size = 24, styles = {}, color }) => {
+const Icon: React.FC<IconProps> = ({ name, paths, size = 24, style = {}, color }) => {
     // Si paths está presente, usarlas directamente
     const iconPaths = paths || (name && icons.find((icon: { name: string }) => icon.name === name)?.paths);
 
@@ -35,7 +35,7 @@ const Icon: React.FC<IconProps> = ({ name, paths, size = 24, styles = {}, color 
         <DynamicIcon
             size={size}
             paths={preparedPaths}
-            styles={styles}
+            style={style}
         />
     );
 };
