@@ -11,7 +11,7 @@
   "author": "Roberto Carraro",
   "license": "ISC",
   "dependencies": {
-    "@precooked/icon-data": "^1.0.2",
+    "@precooked/icon-data": "^1.0.3",
     "@precooked/react-dynamic-icon": "^1.0.6",
     "@precooked/utils": "^1.0.2"
   },
